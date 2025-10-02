@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ankit - Full-Stack Software Developer specializing in Mathematical Information Retrieval">
+    <title>Ankit | Full-Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Ankit Kumar</div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container hero-container" style="display: flex; align-items: center; gap: 2rem;">
+        
+        <!-- Hero Image (Left) -->
+        <div class="hero-image" style="flex: 0 0 250px;">
+            <img src="my_photo.png" alt="Ankit Kumar" style="width: 100%; border-radius: 50%; object-fit: cover;">
+        </div>
+
+        <!-- Hero Text Content (Right) -->
+        <div class="hero-content" style="flex: 1;">
+            <h1 class="hero-title">Hi, I'm <span class="gradient-text">Ankit Kumar</span></h1>
+            <h2 class="hero-subtitle">Full-Stack Software Developer</h2>
+            <p class="hero-description">
+                Software developer with expertise in <strong>Flutter</strong>, <strong>FastAPI</strong>, and <strong>Python</strong>, 
+                combining modern software engineering with research in <strong>Mathematical Information Retrieval</strong> 
+                and <strong>LaTeX/MathML automation</strong>. Passionate about creating intelligent, user-friendly, 
+                and data-driven applications.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/ak0586" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a full-stack software developer and researcher passionate about solving deep technical problems. 
+                        My work bridges <strong>symbolic mathematics</strong> with <strong>modern machine learning</strong>, 
+                        making complex mathematical knowledge accessible and searchable.
+                    </p>
+                    <p>
+                        I’ve designed <strong>custom embedding techniques</strong>, <strong>symbol-aware parsers</strong>, 
+                        and <strong>clustering algorithms</strong> for mathematical information retrieval. 
+                        Beyond research, I build real-world applications—developing <strong>Flutter apps</strong> with 
+                        <strong>FastAPI/NestJS backends</strong>, such as YouTube downloaders with live server-sent events 
+                        and weather apps with real-time API integration.
+                    </p>
+                    <p>
+                        My approach is pragmatic and purpose-driven: from experimental research tools to production-ready apps, 
+                        I focus on writing <strong>clean, scalable, and impactful code</strong> that turns complexity into clarity.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Favorite Project</h3>
+                            <p>Cluster-Based Mathematical Information Retrieval</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-heart"></i>
+                            <h3>Hobbies</h3>
+                            <p>Cricket, Travelling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Featured Project 1 -->
+            <div class="project-card featured">
+                <div class="project-content">
+                    <span class="project-badge">Featured</span>
+                    <h3 class="project-title">Fullstack Math Information Retrieval System</h3>
+                    <p class="project-description">
+                        A comprehensive clustering-based Mathematical Information Retrieval (MathIR) system featuring 
+                        Flutter frontend and FastAPI backend. Supports LaTeX/MathML search with cross-platform compatibility, 
+                        custom embedding techniques, symbol-aware parsers, and advanced clustering algorithms.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">LaTeX</span>
+                        <span class="tech-tag">MathML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://ak0586.github.io/Fullstack_Math_Information_Retrieval_System/" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/ak0586/Fullstack_Math_Information_Retrieval_System" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Featured Project 2 -->
+            <div class="project-card featured">
+                <div class="project-content">
+                    <span class="project-badge">Featured</span>
+                    <h3 class="project-title">Smart Amazon Scraper with Facebook & Telegram Posting</h3>
+                    <p class="project-description">
+                        A Python automation tool that scrapes product data from Amazon India and automatically posts it to a Facebook page and notifies via Telegram. The goal is to streamline affiliate marketing or social media merchandising by eliminating manual posting tasks.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">BeautifulSoup</span>
+                        <span class="tech-tag">Requests</span>
+                        <span class="tech-tag">Facebook Graph API</span>
+                        <span class="tech-tag">Telegram Bot API</span>
+                        <span class="tech-tag">JSON</span>
+                    </div>
+
+                    <div class="project-links">
+                        <!-- <a href="https://ak0586.github.io/Fullstack_Math_Information_Retrieval_System/" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a> -->
+                        <a href="https://github.com/ak0586/amazon_scrapper" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Featured Project 3 -->
+            <div class="project-card featured">
+                <div class="project-content">
+                    <span class="project-badge">Featured</span>
+                    <h3 class="project-title">Automated YouTube Shorts Generator</h3>
+                    <p class="project-description">
+                        A tool that automates the creation and uploading of YouTube Shorts videos. The system can:<br>
+
+                        1. Select randomo quotes from JSON file and generate short video clips.<br>
+
+                        2. Add captions, overlays, or transitions.<br>
+
+                        3. Programmatically upload to YouTube Shorts via the YouTube Data API.<br>
+
+                        4. Schedule or batch-post short videos.<br>
+
+                        5. Handle metadata (titles, tags, thumbnails) automatically<br>
+
+                        This project demonstrates video processing, API integration, automation, and content management.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FFmpeg</span>
+                        <span class="tech-tag">YouTube Data API</span>
+                        <span class="tech-tag">moviepy for Video Editing</span>
+                        <span class="tech-tag">Automation</span>
+                        <span class="tech-tag">Scheduling</span>
+                        <span class="tech-tag">Quotes JSON</span>
+                    </div>
+                    <div class="project-links">
+                        <!-- <a href="https://ak0586.github.io/Fullstack_Math_Information_Retrieval_System/" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a> -->
+                        <a href="https://github.com/ak0586/automated_youtube_shorts" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        <!--Featured Project 4</--> 
+            <div class="project-card featured">
+                <div class="project-content">
+                    <span class="project-badge">Featured</span>
+                    <h3 class="project-title">Youtube Video Downloader</h3>
+                    <p class="project-description">
+                        Developed a full-stack YouTube video downloader application that seamlessly integrates a clean and responsive Flutter frontend with a robust NestJS backend. The application leverages Python's yt-dlp library to fetch available video resolutions and formats. Users can select their desired resolution before initiating the download. Real-time download progress is streamed to the frontend using Server-Sent Events (SSE), ensuring a smooth and interactive user experience across Android, Web, and Desktop platforms.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Frontend: Flutter, Dart</span>
+                        <span class="tech-tag">Backend: NestJS, Python</span>
+                        <span class="tech-tag">Video Download Engine: yt-dlp</span>
+                        <span class="tech-tag">Real-Time Updates: Server-Sent Events (SSE)</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ak0586/youtube_video_downloader" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Projects Grid -->
+            <h3 class="subsection-title">Other Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Forecast App</h3>
+                        <p class="project-description">
+                            Real-time weather forecast application using OpenWeatherMap API. Displays comprehensive weather data 
+                        including temperature, humidity, wind speed, and pressure for any city or village worldwide. 
+                        Features intuitive search functionality and clean, responsive UI.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ak0586/weather_forecast_app" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Basic Calculator</h3>
+                        <p class="project-description">
+                            Developed a cross-platform calculator application using Flutter, designed to perform fundamental arithmetic operations such as addition, subtraction, multiplication, and division. The app features a clean and intuitive user interface, ensuring a seamless experience across various platforms, including Android, iOS, Web, Linux, macOS, and Windows. This project showcases proficiency in Flutter development and the ability to create responsive applications that function consistently across multiple devices.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ak0586/Basic_calculator" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">BMI Calculator</h3>
+                        <p class="project-description">
+                            A BMI calculator tool that calculates Body Mass Index based on height and weight for adult men and women.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ak0586/BMI-Calculator" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Currency Converter App</h3>
+                        <p class="project-description">
+                            Currency converter application for real-time exchange rates across multiple currencies.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">API Integration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ak0586/currency_converter_app" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Dart</span>
+                        <span class="skill-item">TypeScript</span>
+                        <span class="skill-item">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Frameworks & Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Flutter</span>
+                        <span class="skill-item">NestJS</span>
+                        <span class="skill-item">FastAPI</span>
+                        <span class="skill-item">VSCode</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Specializations</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Mathematical IR</span>
+                        <span class="skill-item">LaTeX Processing</span>
+                        <span class="skill-item">Clustering Algorithms</span>
+                        <span class="skill-item">Symbol Parsing</span>
+                        <span class="skill-item">Embedding Techniques</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Full-Stack Development</span>
+                        <span class="skill-item">Mobile Apps</span>
+                        <span class="skill-item">API Development</span>
+                        <span class="skill-item">Real-time Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                </p>
+                <div class="contact-info">
+                    <a href="mailto:er.ankit.kumar@zohomail.in" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>er.ankit.kumar@zohomail.in</span>
+                    </a>
+                    <a href="https://github.com/ak0586" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/ak0586</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ankit. Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
