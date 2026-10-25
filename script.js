@@ -102,7 +102,9 @@ inquiryForm?.addEventListener('submit', (event) => {
 });
 
 window.addEventListener('message', (event) => {
-    if (event.source !== inquiryFrame?.contentWindow) return;
+    const isGoogleScriptOrigin = event.origin === 'https://script.google.com'
+        || /^https:\/\/[a-z0-9-]+\.googleusercontent\.com$/.test(event.origin);
+    if (!isGoogleScriptOrigin) return;
 
     const response = event.data;
     if (response?.type !== 'portfolio-inquiry' || response.requestId !== requestIdField.value) return;

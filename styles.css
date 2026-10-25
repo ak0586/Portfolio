@@ -12,7 +12,7 @@
     --white: #fffdf8;
     --serif: Georgia, "Times New Roman", serif;
     --sans: "DM Sans", "Segoe UI", sans-serif;
-    --content: 1120px;
+    --content: 1600px;
 }
 
 * { box-sizing: border-box; }
@@ -21,7 +21,7 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(
 a { color: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
 img { display: block; max-width: 100%; }
-.container { width: min(var(--content), calc(100% - 72px)); margin-inline: auto; }
+.container { width: min(var(--content), calc(100% - 48px)); margin-inline: auto; }
 .section-shell { position: relative; }
 .site-header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--line); background: rgba(244, 240, 231, .96); }
 .nav { display: flex; min-height: 69px; align-items: center; justify-content: space-between; }

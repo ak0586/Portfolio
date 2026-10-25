@@ -10,6 +10,12 @@ const INQUIRY_TYPES = [
   'Other',
 ];
 
+function doGet() {
+  return HtmlService.createHtmlOutput(
+    'The portfolio inquiry endpoint is available. Submit the form from the portfolio website.',
+  );
+}
+
 function setupInquirySheet() {
   const properties = PropertiesService.getScriptProperties();
   let spreadsheetId = properties.getProperty(SHEET_PROPERTY);
@@ -203,6 +209,6 @@ function responsePage(requestId, ok, emailSent, message) {
   }).replace(/</g, '\\u003c');
 
   return HtmlService.createHtmlOutput(
-    `<!doctype html><html><body><script>parent.postMessage(${payload}, '*');</script></body></html>`,
+    `<!doctype html><html><body><script>window.top.postMessage(${payload}, '*');</script></body></html>`,
   ).setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }
