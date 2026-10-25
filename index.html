@@ -1,558 +1,264 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ankit - Full-Stack Software Developer specializing in Mathematical Information Retrieval">
-    <title>Ankit | Full-Stack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101510">
+    <meta name="description" content="Hire Ankit Kumar for Flutter mobile app development, feature improvements, Firebase and API integrations, and Android app releases.">
+    <title>Ankit Kumar — Flutter Mobile App Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Ankit Kumar</div>
-            <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Ankit Kumar home"><span class="brand-mark">A</span><span>Ankit Kumar</span></a>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-controls="navMenu" aria-expanded="false">
+                <span></span><span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a class="nav-link" href="#services">Services</a></li>
+                <li><a class="nav-link" href="#projects">Work</a></li>
+                <li><a class="nav-link" href="#process">Process</a></li>
+                <li><button class="nav-contact" type="button" data-open-inquiry>Start a project <span aria-hidden="true">↗</span></button></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="container hero-container" style="display: flex; align-items: center; gap: 2rem;">
-        
-        <!-- Hero Image (Left) -->
-        <div class="hero-image" style="flex: 0 0 250px;">
-            <img src="my_photo.png" alt="Ankit Kumar" style="width: 100%; border-radius: 50%; object-fit: cover;">
-        </div>
-
-        <!-- Hero Text Content (Right) -->
-        <div class="hero-content" style="flex: 1;">
-            <h1 class="hero-title">Hi, I'm <span class="gradient-text">Ankit Kumar</span></h1>
-            <h2 class="hero-subtitle">Flutter, Python & FastAPI Developer</h2>
-            <p class="hero-description">
-                Software engineer with expertise in <strong>Flutter</strong>, <strong>Python (FastAPI)</strong>, native Android integrations (<strong>Kotlin/Java</strong>), and <strong>NestJS</strong> backend architectures. Passionate about deploying scalable instances on <strong>AWS EC2</strong>, shipping production-grade applications to the <strong>Google Play Store</strong>, designing offline-first systems, and researching <strong>Mathematical Information Retrieval</strong>.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com/ak0586" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-        </div>
-        
-    </div>
-</section>
-
-
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a mobile and full-stack software developer with hands-on experience shipping production-grade cross-platform applications to the <strong>Google Play Store</strong>. My engineering expertise centers around <strong>Flutter/Dart</strong>, native Android integrations (<strong>Kotlin/Java</strong>), building secure backend architectures using <strong>FastAPI</strong> and <strong>NestJS</strong>, and deploying scalable instances on <strong>AWS EC2</strong>.
-                    </p>
-                    <p>
-                        Beyond building anti-theft security suites and collaborative mapping tools, I also conduct research in <strong>Mathematical Information Retrieval (MathIR)</strong>. I design <strong>custom embedding techniques</strong>, <strong>symbol-aware parsers</strong>, and <strong>clustering algorithms</strong> that make complex mathematical knowledge searchable and accessible.
-                    </p>
-                    <p>
-                        My approach to software engineering is pragmatic, security-focused, and modern. I actively integrate <strong>LLM-assisted development</strong> workflows to accelerate prototyping, write clean code, and enforce rigorous quality standards. From designing <strong>offline-first systems</strong> to optimizing real-time sync pipelines, I focus on building impactful solutions that turn technical complexity into seamless user experiences.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-trophy"></i>
-                            <h3>Favorite Project</h3>
-                            <p>Cluster-Based Mathematical Information Retrieval</p>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-heart"></i>
-                            <h3>Hobbies</h3>
-                            <p>Cricket, Travelling</p>
-                        </div>
+    <main>
+        <section class="hero section-shell" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="status-dot"></span> INDEPENDENT FLUTTER DEVELOPER</p>
+                    <h1>Mobile apps, made with care and <span class="accent-text">built to last.</span></h1>
+                    <p class="hero-description">I’m Ankit Kumar, a Flutter developer working with founders and teams to design, build, and ship useful Android and iOS apps.</p>
+                    <div class="hero-actions">
+                        <button class="button button-primary" type="button" data-open-inquiry>Tell me about your project <span aria-hidden="true">↗</span></button>
+                        <a class="button button-quiet" href="#projects">See what I’ve built <span aria-hidden="true">↓</span></a>
+                    </div>
+                    <div class="hero-socials" aria-label="Social links">
+                        <a href="https://github.com/ak0586" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                        <span class="social-divider" aria-hidden="true"></span>
+                        <a href="mailto:er.ankit.kumar@zohomail.in">Email <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-list">
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-role">Software Engineer Intern – Flutter Developer</h3>
-                            <div class="experience-company">Arocoiris Technologies Pvt. Ltd.</div>
-                        </div>
-                        <span class="experience-duration">Jan 2026 – Apr 2026</span>
+                <div class="portrait-wrap">
+                    <div class="portrait-frame">
+                        <div class="portrait-topline"><span>PEOPLE BEHIND THE PRODUCT</span><span>01 / 01</span></div>
+                        <img src="my_photo1.jpeg" alt="Ankit Kumar in a purple hoodie">
+                        <div class="portrait-caption"><span class="caption-mark" aria-hidden="true">↗</span><span><strong>Ankit Kumar</strong><br>Flutter developer · India</span></div>
                     </div>
-                    <div class="experience-details">
-                        <strong style="color: var(--text-primary);">Project: InvestVerse (Cross-Platform Social Application)</strong>
-                        <ul style="margin-top: 0.75rem; list-style: none; padding-left: 0;">
-                            <li style="position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: var(--text-secondary); line-height: 1.6;">
-                                <span style="position: absolute; left: 0; color: var(--primary-color);">✦</span>
-                                Built and optimized core features for a social networking app in Flutter/Dart, delivering a pixel-perfect, multilingual Material3 UI across iOS and Android.
-                            </li>
-                            <li style="position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: var(--text-secondary); line-height: 1.6;">
-                                <span style="position: absolute; left: 0; color: var(--primary-color);">✦</span>
-                                Designed Firestore data models with security rules, compound indexing, and real-time listeners for efficient, access-controlled data management.
-                            </li>
-                            <li style="position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: var(--text-secondary); line-height: 1.6;">
-                                <span style="position: absolute; left: 0; color: var(--primary-color);">✦</span>
-                                Implemented user-blocking with automated deep cleanup of historical interactions (likes, comments, feeds) — maintaining strict data integrity across all collections.
-                            </li>
-                            <li style="position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: var(--text-secondary); line-height: 1.6;">
-                                <span style="position: absolute; left: 0; color: var(--primary-color);">✦</span>
-                                Refactored Provider-based state management and caching logic, resolving real-time sync issues and significantly improving search accuracy and UI responsiveness.
-                            </li>
+                    <span class="portrait-stamp" aria-hidden="true">BUILD<br>WITH<br>CARE</span>
+                </div>
+            </div>
+            <div class="container hero-bottom">
+                <span>FLUTTER · DART · MOBILE APPS</span>
+                <span class="hero-bottom-line" aria-hidden="true"></span>
+                <span>AVAILABLE FOR SELECT PROJECTS</span>
+            </div>
+        </section>
+
+        <section class="intro-section section-shell" id="about">
+            <div class="container intro-grid">
+                <div>
+                    <p class="eyebrow">A PRACTICAL, HANDS-ON PARTNER</p>
+                    <h2>Thoughtful engineering, from first sketch to release.</h2>
+                </div>
+                <div class="intro-copy">
+                    <p>My work is mostly Flutter and Dart, with the integrations that make an app useful in the real world: Firebase, APIs, payments, analytics, and native Android features.</p>
+                    <p>I like clear scope, steady communication, and code the next developer can understand. I’m equally happy helping shape an MVP or joining an existing app for a focused improvement.</p>
+                    <a class="text-link" href="#services">See how I can help <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section section-shell" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <div><p class="eyebrow">WAYS I CAN HELP</p><h2>Mobile development, made straightforward<span class="accent-text">.</span></h2></div>
+                    <p>Flexible support for a new build, a growing product, or a team that needs an extra pair of hands.</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card"><span class="service-number">01</span><h3>Build your Flutter app</h3><p>Cross-platform Android and iOS apps built around your requirements, users, and launch goals.</p><span class="service-outcome">MVPs · New products · Feature builds</span></article>
+                    <article class="service-card"><span class="service-number">02</span><h3>Improve an existing app</h3><p>Add features, refine screens, fix bugs, and make your current Flutter app easier to maintain.</p><span class="service-outcome">Enhancements · UI polish · Bug fixes</span></article>
+                    <article class="service-card"><span class="service-number">03</span><h3>Connect your app</h3><p>Integrate Firebase or Supabase, connect REST APIs, and add authentication, notifications, and native device capabilities.</p><span class="service-outcome">Firebase · Supabase · APIs · Android</span></article>
+                    <article class="service-card"><span class="service-number">04</span><h3>Monetize & measure</h3><p>Set up in-app purchases and payments, ads, analytics, and crash reporting to support your app after launch.</p><span class="service-outcome">Razorpay · Play Billing · AdMob · Analytics</span></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section section-shell" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <div><p class="eyebrow">SELECTED MOBILE WORK</p><h2>Real apps. Real-world problems<span class="accent-text">.</span></h2></div>
+                    <p>Production-focused Flutter apps, with backend engineering to support them.</p>
+                </div>
+
+                <article class="project-card project-phoneguard">
+                    <div class="project-visual phone-visual">
+                        <figure class="brand-art">
+                            <img src="portfolio-assets/phoneguard-logo.png" alt="PhoneGuard app logo">
+                            <figcaption>PhoneGuard · Android device recovery</figcaption>
+                        </figure>
+                        <span class="visual-index">01 — APP DEVELOPMENT</span>
+                    </div>
+                    <div class="project-copy">
+                        <div class="project-meta"><span>ANDROID · MOBILE SECURITY</span><span class="project-number">01</span></div>
+                        <h3>PhoneGuard</h3>
+                        <p class="project-lede">A Google Play app that helps people protect and recover an Android phone if it is lost or stolen.</p>
+                        <p class="project-detail">Built with Flutter and native Kotlin integrations for Android device capabilities. Firebase supports authentication, cloud sync, and notifications, with SMS recovery commands for when mobile data is unavailable.</p>
+                        <div class="tag-list"><span>Flutter</span><span>Kotlin</span><span>Firebase</span><span>Android services</span></div>
+                        <ul class="feature-list">
+                            <li>Remote location, alarm, and lock commands</li>
+                            <li>SMS-based recovery actions</li>
+                            <li>Device protection and account sync</li>
                         </ul>
+                        <div class="project-actions">
+                            <a class="text-link" href="https://play.google.com/store/apps/details?id=com.kyvronix.phoneguard" target="_blank" rel="noreferrer">View on Google Play <span aria-hidden="true">↗</span></a>
+                        </div>
                     </div>
-                    <div class="experience-tech" style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">Firebase (Firestore/Auth)</span>
-                        <span class="tech-tag">Provider</span>
-                        <span class="tech-tag">Material3 UI</span>
-                        <span class="tech-tag">Multilingual UI</span>
-                        <span class="tech-tag">Agile</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                </article>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            
-            <!-- Featured Project: PhoneGuard -->
-            <div class="project-card featured">
-                <div class="project-content">
-                    <span class="project-badge">Featured</span>
-                    <h3 class="project-title">PhoneGuard: Anti-Theft & Lost Phone Finder</h3>
-                    <p class="project-description">
-                        An enterprise-grade anti-theft security suite and device recovery platform. It provides a secure, robust remote control bridge to track, secure, and locate devices even without active mobile data or Wi-Fi connectivity.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Flutter (Dart)</span>
-                        <span class="tech-tag">Kotlin / Java</span>
-                        <span class="tech-tag">NestJS</span>
-                        <span class="tech-tag">Firebase (Firestore/Messaging/Storage)</span>
-                        <span class="tech-tag">Device Admin SDK</span>
-                        <span class="tech-tag">Android CameraX</span>
-                        <span class="tech-tag">Foreground Services</span>
+                <article class="project-card project-bhumitra">
+                    <div class="project-visual land-visual">
+                        <div class="app-shot-pair">
+                            <figure class="app-shot app-shot-home"><img src="portfolio-assets/bhumitra-home.png" alt="BhuMitra home screen"></figure>
+                            <figure class="app-shot app-shot-result"><img src="portfolio-assets/bhumitra-result.png" alt="BhuMitra land area calculation and unit conversion result"></figure>
+                        </div>
+                        <span class="visual-index">02 — FLUTTER APP</span>
                     </div>
-                    <div class="project-features" style="margin-top: 0.75rem; margin-bottom: 1.25rem;">
-                        <strong>Key Features:</strong>
-                        <ul style="margin: 0.5rem 0 0 1.25rem; line-height: 1.5; color: var(--text-secondary);">
-                            <li><strong>Hybrid Recovery Engine:</strong> Seamlessly switches between a real-time Cloud Sync panel (Web Dashboard) and an Offline SMS Command Suite to control the device remotely.</li>
-                            <li><strong>Silent Intruder Selfie:</strong> Utilizes Android CameraX to silently capture front-camera photos of intruders on failed PIN/Pattern screen-unlock attempts, automatically uploading them to private cloud storage.</li>
-                            <li><strong>System-Level Native Control:</strong> Integrates Android Device Policy Manager (Device Admin SDK) to trigger secure screen locks and enable uninstall protection to prevent bypass attempts.</li>
-                            <li><strong>Active SIM Change Detection:</strong> Background broadcast listeners monitor hardware changes, sending the new phone number and exact GPS coordinates to trusted safety numbers if a SIM card is swapped.</li>
-                            <li><strong>Foreground Recovery Siren:</strong> Sounds a high-decibel alert siren, bypassing native volume controls, even when the device is set to silent.</li>
+                    <div class="project-copy">
+                        <div class="project-meta"><span>FLUTTER · GEOSPATIAL</span><span class="project-number">02</span></div>
+                        <h3>BhuMitra <span class="title-sub">Mobile app</span></h3>
+                        <p class="project-lede">A Flutter app for measuring land boundaries in the field and sharing clear survey results.</p>
+                        <p class="project-detail">BhuMitra uses GPS walking and map-based boundary capture to calculate plot areas, convert measurement units, save plots, and create shareable PDF reports. A NestJS backend supports accounts and real-time collaborative surveys.</p>
+                        <div class="tag-list"><span>Flutter</span><span>Riverpod</span><span>Maps & GPS</span><span>PDF reports</span></div>
+                        <ul class="feature-list">
+                            <li>Walk-the-boundary and map drawing modes</li>
+                            <li>Saved plots and area-unit conversion</li>
+                            <li>Collaborative surveys and report sharing</li>
                         </ul>
+                        <div class="project-actions">
+                            <a class="text-link" href="https://play.google.com/store/apps/details?id=app.ankit.bhumitra" target="_blank" rel="noreferrer">View on Google Play <span aria-hidden="true">↗</span></a>
+                            <a class="text-link" href="https://github.com/ak0586/bhumitra" target="_blank" rel="noreferrer">View project <span aria-hidden="true">↗</span></a>
+                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.kyvronix.phoneguard" target="_blank" class="btn btn-primary">
-                            <i class="fab fa-google-play"></i> Google Play
-                        </a>
-                        <a href="https://phoneguard-web-dashboard.vercel.app/" target="_blank" class="btn btn-secondary">
-                            <i class="fas fa-external-link-alt"></i> Web Dashboard
-                        </a>
-                    </div>
-                </div>
-            </div>
+                </article>
 
-            <!-- Featured Project: Bhumitra -->
-            <div class="project-card featured">
-                <div class="project-content">
-                    <span class="project-badge">Featured</span>
-                    <h3 class="project-title">Bhumitra: Collaborative GPS Land Measurement Platform</h3>
-                    <p class="project-description">
-                        A high-precision, collaborative geospatial land surveying platform designed for farmers, surveyors, and land professionals. It combines a cross-platform mobile client with a real-time sync backend to map land boundaries, calculate polygon areas (with Turf.js), and eliminate mobile coordinate jitter using spatial smoothing filters.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Flutter (Dart)</span>
-                        <span class="tech-tag">Riverpod</span>
-                        <span class="tech-tag">NestJS (TypeScript)</span>
-                        <span class="tech-tag">PostgreSQL 15</span>
-                        <span class="tech-tag">Redis 7</span>
-                        <span class="tech-tag">Socket.io (WebSockets)</span>
-                        <span class="tech-tag">Turf.js & OpenStreetMap</span>
-                        <span class="tech-tag">Google Play Integrity API</span>
+                <article class="project-card project-api">
+                    <div class="project-visual api-visual">
+                        <div class="architecture-sketch">
+                            <p class="sketch-label">A SIMPLE VIEW OF THE SYSTEM</p>
+                            <div class="architecture-node">BhuMitra mobile app</div>
+                            <span class="architecture-link">REST API <i>↓</i> WebSocket</span>
+                            <div class="architecture-node architecture-api">NestJS backend</div>
+                            <div class="architecture-stores"><span>PostgreSQL</span><span>Redis</span></div>
+                        </div>
+                        <span class="visual-index">03 — BACKEND ENGINEERING</span>
                     </div>
-                    <div class="project-features" style="margin-top: 0.75rem; margin-bottom: 1.25rem;">
-                        <strong>Key Features:</strong>
-                        <ul style="margin: 0.5rem 0 0 1.25rem; line-height: 1.5; color: var(--text-secondary);">
-                            <li><strong>Real-Time Collaborative Surveying:</strong> Supports multiplayer surveying rooms (via Socket.io and Redis) allowing team members to walk separate boundary quadrants simultaneously and visualize the aggregated polygon in real-time.</li>
-                            <li><strong>Attestation Handshake:</strong> Secures client-server communication using Google Play Integrity API device verification and App ID Guards to prevent scraping and API piracy.</li>
-                            <li><strong>Professional PDF Report Engine:</strong> Automatically calculates total land area, boundary perimeter, and coordinate lists, generating GIS PDF reports with map images to share via WhatsApp/Email.</li>
-                            <li><strong>Smart Conversions & Bilingual Support:</strong> Instantly converts measurements across standard and traditional units (Acres, Hectares, Sq Ft, Sq Yards, Bigha, etc.) with localized support in English and Hindi (हिंदी).</li>
+                    <div class="project-copy">
+                        <div class="project-meta"><span>NESTJS · REAL-TIME SYSTEMS</span><span class="project-number">03</span></div>
+                        <h3>BhuMitra <span class="title-sub">Backend API</span></h3>
+                        <p class="project-lede">The service layer behind BhuMitra's accounts, land surveys, and live collaboration.</p>
+                        <p class="project-detail">A modular NestJS API backed by PostgreSQL and Redis. REST endpoints handle application data, while Socket.IO rooms synchronize survey participants and boundary updates in real time.</p>
+                        <div class="tag-list"><span>NestJS</span><span>TypeScript</span><span>PostgreSQL</span><span>Redis</span><span>Socket.IO</span></div>
+                        <ul class="feature-list">
+                            <li>Structured API modules and input validation</li>
+                            <li>Live survey rooms over WebSockets</li>
+                            <li>Redis-backed caching and room state</li>
                         </ul>
+                        <div class="project-actions">
+                            <a class="text-link" href="https://github.com/ak0586/bhumitra/tree/main/bhumitra-backend" target="_blank" rel="noreferrer">Explore backend <span aria-hidden="true">↗</span></a>
+                            <a class="text-link" href="https://github.com/ak0586/bhumitra/blob/main/API_DOCUMENTATION.md" target="_blank" rel="noreferrer">API documentation <span aria-hidden="true">↗</span></a>
+                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="https://play.google.com/store/apps/details?id=app.ankit.bhumitra" target="_blank" class="btn btn-primary">
-                            <i class="fab fa-google-play"></i> Google Play
-                        </a>
-                        <a href="https://github.com/ak0586/bhumitra" target="_blank" class="btn btn-secondary">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                        <a href="https://github.com/ak0586/bhumitra/blob/main/README.md" target="_blank" class="btn btn-secondary">
-                            <i class="fas fa-book"></i> Documentation
-                        </a>
-                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="process-section section-shell" id="process">
+            <div class="container">
+                <div class="section-heading">
+                    <div><p class="eyebrow">A CLEAR, COLLABORATIVE PROCESS</p><h2>Know what happens next<span class="accent-text">.</span></h2></div>
+                    <p>Focused milestones keep your project transparent from the first conversation to delivery.</p>
+                </div>
+                <div class="process-grid">
+                    <article class="process-step"><span>01</span><h3>Scope the goal</h3><p>We align on your users, essential features, platforms, and what success looks like.</p></article>
+                    <article class="process-step"><span>02</span><h3>Build in milestones</h3><p>You get regular progress updates and working builds to review as the app takes shape.</p></article>
+                    <article class="process-step"><span>03</span><h3>Test & hand over</h3><p>We check important flows, prepare the release, and hand over clean, documented work.</p></article>
                 </div>
             </div>
+        </section>
 
-            <!-- Featured Project 1 -->
-            <div class="project-card featured">
-                <div class="project-content">
-                    <span class="project-badge">Featured</span>
-                    <h3 class="project-title">Fullstack Math Information Retrieval System</h3>
-                    <p class="project-description">
-                        A comprehensive clustering-based Mathematical Information Retrieval (MathIR) system featuring 
-                        Flutter frontend and FastAPI backend. Supports LaTeX/MathML search with cross-platform compatibility, 
-                        custom embedding techniques, symbol-aware parsers, and advanced clustering algorithms.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">LaTeX</span>
-                        <span class="tech-tag">MathML</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://ak0586.github.io/Fullstack_Math_Information_Retrieval_System/" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/ak0586/Fullstack_Math_Information_Retrieval_System" target="_blank" class="btn btn-secondary">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div>
+        <section class="stack-section section-shell" id="stack">
+            <div class="container stack-layout">
+                <div class="stack-intro"><p class="eyebrow">MY MOBILE APP TOOLKIT</p><h2>Flutter first.<br>End to end.</h2><p>Mobile is the focus. Backend, payments, analytics, and monetization integrations help deliver a complete product.</p></div>
+                <div class="stack-groups">
+                    <div class="stack-group"><span class="stack-label">MOBILE APP</span><div class="tag-list"><span>Flutter</span><span>Dart</span><span>Riverpod</span><span>Provider</span><span>Kotlin</span></div></div>
+                    <div class="stack-group"><span class="stack-label">BACKEND & BAAS</span><div class="tag-list"><span>REST APIs</span><span>Firebase</span><span>Supabase</span><span>NestJS</span><span>Maps & GPS</span></div></div>
+                    <div class="stack-group"><span class="stack-label">PAYMENTS</span><div class="tag-list"><span>Razorpay</span><span>Google Play Billing</span><span>In-app purchases</span></div></div>
+                    <div class="stack-group"><span class="stack-label">MONETIZATION & QUALITY</span><div class="tag-list"><span>AdMob</span><span>Firebase Analytics</span><span>Crashlytics</span><span>Push notifications</span></div></div>
+                    <div class="stack-group"><span class="stack-label">BACKEND</span><div class="tag-list"><span>NestJS</span><span>TypeScript</span><span>Socket.IO</span></div></div>
+                    <div class="stack-group"><span class="stack-label">DATA & CLOUD</span><div class="tag-list"><span>PostgreSQL</span><span>Redis</span><span>AWS</span></div></div>
+                    <div class="stack-group"><span class="stack-label">FOCUS AREAS</span><div class="tag-list"><span>Geospatial apps</span><span>Real-time systems</span><span>Android integrations</span><span>API design</span></div></div>
                 </div>
             </div>
+        </section>
 
-            <!--Featured Project 3 -->
-            <div class="project-card featured">
-                <div class="project-content">
-                    <span class="project-badge">Featured</span>
-                    <h3 class="project-title">Gaeinova Magic</h3>
-
-                    <p class="project-description">
-                    Built a full-stack e-commerce platform for handcrafted candles and festive gift combos.
-                    The app pairs a responsive custom frontend (HTML, CSS, JavaScript) with a secure FastAPI backend and SQLite. 
-                    Users can browse products, add items to cart, and place orders with Cash on Delivery (COD).
-                    Admins have a protected dashboard to manage the catalogue (add / edit / delete products), view orders and customer messages, and manage categories.
-                    Deployed on AWS EC2 behind Nginx with HTTPS via Certbot.
-                    </p>
-
-                    <div class="project-tech">
-                    <span class="tech-tag">Frontend: HTML, CSS, JavaScript</span>
-                    <span class="tech-tag">Backend: FastAPI (Python)</span>
-                    <span class="tech-tag">Database: SQLite (SQLAlchemy)</span>
-                    <span class="tech-tag">Auth: JWT Tokens (python-jose)</span>
-                    <span class="tech-tag">Image Uploads: multipart/form-data</span>
-                    <span class="tech-tag">Deployment: AWS EC2, Nginx, Certbot SSL</span>
-                    </div>
-
-                    <div class="project-features" style="margin-top: 0.75rem;">
-                    <strong>Key features:</strong>
-                    <ul style="margin: 0.5rem 0 0 1.25rem; line-height: 1.4;">
-                        <li>User: browse products, search, filter, add to cart, checkout (COD).</li>
-                        <li>Admin: protected dashboard (add / delete / update products & categories).</li>
-                        <li>Order processing: create orders, reduce stock, view order history.</li>
-                        <li>Contact form & newsletter subscription; admin can view/delete messages.</li>
-                    </ul>
-                    </div>
-
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://www.gaeinova-magic.shop/" target="_blank" class="btn btn-primary">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        
-                        <a href="https://github.com/ak0586/gaeinova-magic" target="_blank" class="btn btn-secondary">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div>
-                </div>
+        <section class="contact-section section-shell" id="contact">
+            <div class="container contact-card">
+                <div><p class="eyebrow">HAVE A MOBILE APP PROJECT?</p><h2>Let's turn your idea<br>into an app.</h2></div>
+                <div class="contact-side"><p>Share what you're building, where you are in the process, and what kind of help you need. I'll get back to you to discuss next steps.</p><button class="button button-primary" type="button" data-open-inquiry>Tell me about your project <span aria-hidden="true">↗</span></button></div>
+                <span class="contact-decoration" aria-hidden="true">✳</span>
             </div>
+        </section>
+    </main>
 
-
-
-
-            <!-- Other Projects Grid -->
-            <h3 class="subsection-title">Other Projects</h3>
-            <div class="projects-grid">
-
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Weather Forecast App</h3>
-                        <p class="project-description">
-                            Real-time weather forecast application using OpenWeatherMap API. Displays comprehensive weather data 
-                        including temperature, humidity, wind speed, and pressure for any city or village worldwide. 
-                        Features intuitive search functionality and clean, responsive UI.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Dart</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ak0586/weather_forecast_app" target="_blank" class="btn btn-secondary">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project - Smart Amazon Scraper -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Smart Amazon Scraper with Facebook & Telegram Posting</h3>
-                        <p class="project-description">
-                            Developed a Python automation tool that scrapes product data from Amazon India and automatically posts it to Facebook pages with Telegram notifications. The application streamlines affiliate marketing and social media merchandising by eliminating manual posting tasks. Features intelligent data extraction using BeautifulSoup, automated social media integration via Facebook Graph API, and real-time notifications through Telegram Bot API. Handles product information including titles, prices, ratings, and images with structured JSON data management.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Web Scraping: Python, BeautifulSoup, Requests</span>
-                            <span class="tech-tag">Social Media APIs: Facebook Graph API, Telegram Bot API</span>
-                            <span class="tech-tag">Data Management: JSON</span>
-                            <span class="tech-tag">Automation: Scheduled Posting</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ak0586/amazon_scrapper" target="_blank" class="btn btn-secondary">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project - Automated YouTube Shorts Generator -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Automated YouTube Shorts Generator</h3>
-                        <p class="project-description">
-                            Built an end-to-end automation tool that generates and uploads YouTube Shorts videos programmatically. The system selects random quotes from a JSON database, generates short video clips with captions and transitions using MoviePy, and automatically uploads them via YouTube Data API. Features include batch video processing, intelligent metadata management (titles, tags, thumbnails), scheduled posting capabilities, and FFmpeg integration for video encoding. This project demonstrates advanced video processing, API integration, and content automation workflows.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Video Processing: Python, FFmpeg, MoviePy</span>
-                            <span class="tech-tag">API Integration: YouTube Data API v3</span>
-                            <span class="tech-tag">Automation: Scheduling, Batch Processing</span>
-                            <span class="tech-tag">Content Management: JSON Database, Metadata Handling</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ak0586/automated_youtube_shorts" target="_blank" class="btn btn-secondary">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Youtube Video Downloader</h3>
-                        <p class="project-description">
-                            Developed a full-stack YouTube video downloader application that seamlessly integrates a clean and responsive Flutter frontend with a robust NestJS backend. The application leverages Python's yt-dlp library to fetch available video resolutions and formats. Users can select their desired resolution before initiating the download. Real-time download progress is streamed to the frontend using Server-Sent Events (SSE), ensuring a smooth and interactive user experience across Android, Web, and Desktop platforms.
-
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Frontend: Flutter, Dart</span>
-                            <span class="tech-tag">Backend: NestJS, Python</span>
-                            <span class="tech-tag">Video Download Engine: yt-dlp</span>
-                            <span class="tech-tag">Real-Time Updates: Server-Sent Events (SSE)</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ak0586/youtube_video_downloader" target="_blank" class="btn btn-secondary">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-            
-
-            
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Basic Calculator</h3>
-                        <p class="project-description">
-                            Developed a cross-platform calculator application using Flutter, designed to perform fundamental arithmetic operations such as addition, subtraction, multiplication, and division. The app features a clean and intuitive user interface, ensuring a seamless experience across various platforms, including Android, iOS, Web, Linux, macOS, and Windows. This project showcases proficiency in Flutter development and the ability to create responsive applications that function consistently across multiple devices.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Dart</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ak0586/Basic_calculator" target="_blank" class="btn btn-secondary">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            
-
-
-
-            
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">BMI Calculator</h3>
-                        <p class="project-description">
-                            A BMI calculator tool that calculates Body Mass Index based on height and weight for adult men and women.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Dart</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ak0586/BMI-Calculator" target="_blank" class="btn btn-secondary">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            
-
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Currency Converter App</h3>
-                        <p class="project-description">
-                            Currency converter application for real-time exchange rates across multiple currencies.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Dart</span>
-                            <span class="tech-tag">API Integration</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ak0586/currency_converter_app" target="_blank" class="btn btn-secondary">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Languages</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">C++</span>
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">Dart</span>
-                        <span class="skill-item">Kotlin</span>
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">TypeScript</span>
-                        <span class="skill-item">JavaScript</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> Frameworks & Tools</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Flutter</span>
-                        <span class="skill-item">NestJS</span>
-                        <span class="skill-item">FastAPI</span>
-                        <span class="skill-item">Firebase</span>
-                        <span class="skill-item">PostgreSQL</span>
-                        <span class="skill-item">Redis</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">Socket.io</span>
-                        <span class="skill-item">VSCode</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> Specializations</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Mobile Security</span>
-                        <span class="skill-item">Geospatial Mapping & GPS</span>
-                        <span class="skill-item">LLM-Assisted Development</span>
-                        <span class="skill-item">Mathematical IR</span>
-                        <span class="skill-item">LaTeX Processing</span>
-                        <span class="skill-item">Clustering Algorithms</span>
-                        <span class="skill-item">Symbol Parsing</span>
-                        <span class="skill-item">Embedding Techniques</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-mobile-alt"></i> Development</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Full-Stack Development</span>
-                        <span class="skill-item">Mobile Apps</span>
-                        <span class="skill-item">API Development</span>
-                        <span class="skill-item">Real-time Systems</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p class="contact-description">
-                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-                </p>
-                <div class="contact-info">
-                    <a href="mailto:er.ankit.kumar@zohomail.in" class="contact-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>er.ankit.kumar@zohomail.in</span>
-                    </a>
-                    <a href="https://github.com/ak0586" target="_blank" class="contact-link">
-                        <i class="fab fa-github"></i>
-                        <span>github.com/ak0586</span>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" class="contact-link">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn Profile</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Ankit. Built with passion and code.</p>
-        </div>
+    <footer class="site-footer">
+        <div class="container footer-content"><a class="brand" href="#home"><span class="brand-mark">A</span><span>Ankit Kumar</span></a><p>Made with care · © <span id="currentYear">2026</span></p><a href="https://github.com/ak0586" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
     </footer>
 
+    <dialog class="inquiry-dialog" id="inquiryDialog" aria-labelledby="inquiryTitle">
+        <div class="dialog-heading">
+            <div><p class="eyebrow">PROJECT INQUIRY</p><h2 id="inquiryTitle">Tell me what you’re building.</h2></div>
+            <button class="dialog-close" type="button" data-close-inquiry aria-label="Close inquiry form">×</button>
+        </div>
+        <p class="dialog-intro">A few details will help me understand your project and get back to you with useful next steps.</p>
+        <form class="inquiry-form" id="inquiryForm" method="post" target="inquiryResponse" novalidate>
+            <div class="form-grid">
+                <label class="form-field">Your name<input name="name" type="text" autocomplete="name" maxlength="100" required></label>
+                <label class="form-field">Email address<input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+                <label class="form-field">What do you need?
+                    <select name="projectType" required>
+                        <option value="" selected disabled>Select a project type</option>
+                        <option>New mobile app</option>
+                        <option>Flutter app improvements</option>
+                        <option>Firebase or Supabase integration</option>
+                        <option>Payments, analytics, or ads</option>
+                        <option>Bug fixes or app maintenance</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+                <label class="form-field">Estimated budget<input name="budget" type="text" maxlength="80" placeholder="e.g. USD 800 or INR 65,000" required></label>
+                <label class="form-field">Target deadline<input name="deadline" type="date" required></label>
+                <label class="form-field form-field-wide">Project requirements<textarea name="requirements" rows="4" maxlength="3000" placeholder="What should the app do? Include key features, platforms, and anything else I should know." required></textarea></label>
+            </div>
+            <label class="form-consent"><input name="consent" type="checkbox" value="yes" required><span>You may contact me about this project inquiry.</span></label>
+            <label class="form-trap" aria-hidden="true">Leave this field empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+            <input name="requestId" id="inquiryRequestId" type="hidden">
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            <div class="form-actions"><button class="button button-primary" type="submit" id="submitInquiry">Send project inquiry <span aria-hidden="true">↗</span></button><span>Your details are used only to respond to this inquiry.</span></div>
+        </form>
+        <div class="inquiry-success" id="inquirySuccess" hidden>
+            <span class="success-mark" aria-hidden="true">✓</span>
+            <h3>Thanks for the project details.</h3>
+            <p id="successMessage">Your inquiry has been added to my project list.</p>
+            <button class="button button-quiet" type="button" id="sendAnotherInquiry">Send another inquiry</button>
+        </div>
+    </dialog>
+    <iframe class="form-response-frame" name="inquiryResponse" id="inquiryResponse" title="Form submission response"></iframe>
     <script src="script.js"></script>
 </body>
 </html>
