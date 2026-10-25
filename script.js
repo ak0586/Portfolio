@@ -8,8 +8,7 @@ const inquiryFrame = document.getElementById('inquiryResponse');
 const formStatus = document.getElementById('formStatus');
 const submitInquiry = document.getElementById('submitInquiry');
 
-// Paste the deployed Apps Script Web App URL here to enable form delivery.
-const PROJECT_INQUIRY_ENDPOINT = '';
+const PROJECT_INQUIRY_ENDPOINT = window.PORTFOLIO_CONFIG?.inquiryEndpoint || '';
 
 if (currentYear) {
     currentYear.textContent = new Date().getFullYear();
@@ -78,12 +77,12 @@ inquiryForm?.addEventListener('submit', (event) => {
     if (!inquiryForm.reportValidity()) return;
 
     if (!PROJECT_INQUIRY_ENDPOINT) {
-        setFormStatus('The form is ready, but delivery is not connected yet. Deploy google-apps-script.gs and add its Web App URL in script.js.');
+        setFormStatus('The form is ready, but delivery is not connected yet. Add the Apps Script Web App URL as the PROJECT_INQUIRY_ENDPOINT GitHub Actions variable and redeploy.');
         return;
     }
 
     if (!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/.test(PROJECT_INQUIRY_ENDPOINT)) {
-        setFormStatus('The inquiry form endpoint is invalid. Check the Apps Script Web App URL in script.js.');
+        setFormStatus('The inquiry form endpoint is invalid. Check the PROJECT_INQUIRY_ENDPOINT GitHub Actions variable.');
         return;
     }
 

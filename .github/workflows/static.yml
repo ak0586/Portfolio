@@ -33,6 +33,22 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Configure project inquiry endpoint
+        env:
+          PROJECT_INQUIRY_ENDPOINT: ${{ vars.PROJECT_INQUIRY_ENDPOINT }}
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const endpoint = process.env.PROJECT_INQUIRY_ENDPOINT || '';
+          const validEndpoint = /^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/;
+
+          if (endpoint && !validEndpoint.test(endpoint)) {
+            throw new Error('PROJECT_INQUIRY_ENDPOINT must be a Google Apps Script Web App URL ending in /exec.');
+          }
+
+          const config = JSON.stringify({ inquiryEndpoint: endpoint });
+          fs.writeFileSync('inquiry-config.js', `window.PORTFOLIO_CONFIG = ${config};\n`);
+          NODE
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
